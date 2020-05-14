@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'review.dart';
 
+// ignore: must_be_immutable
 class DescriptionPlace extends StatelessWidget{
 
   String namePlace;
@@ -11,7 +12,7 @@ class DescriptionPlace extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    final star_half = Container(
+    final starHalf = Container(
       margin: EdgeInsets.only(
         top: 323.0,
         right: 3.0,
@@ -21,7 +22,7 @@ class DescriptionPlace extends StatelessWidget{
         color: Color(0xFFF2C611),
       ),
     );
-    final star_border = Container(
+    final starBorder = Container(
       margin: EdgeInsets.only(
         top: 323.0,
         right: 3.0,
@@ -41,7 +42,7 @@ class DescriptionPlace extends StatelessWidget{
         color: Color(0xFFF2C611),
       ),
     );
-    final title_start = Row (
+    final titleStart = Row (
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
@@ -66,18 +67,19 @@ class DescriptionPlace extends StatelessWidget{
             star,
             star,
             star,
-            star_border
+            starBorder
           ],
         )
       ],
     );
-    final descrition = Container(
+    final description = Container(
       margin: EdgeInsets.only(
         top: 15.0,
         left: 20.0,
         right: 20.0
       ),
-      child: new Text(descriptionPlace,
+      child: Text(
+        descriptionPlace,
         style: TextStyle(
         fontSize: 15.0,
         fontFamily: "Lato",
@@ -89,8 +91,8 @@ class DescriptionPlace extends StatelessWidget{
     final content = Container(
       child: Column(
         children: <Widget>[
-          title_start,
-          descrition
+          titleStart,
+          description
 
         ],
       ),

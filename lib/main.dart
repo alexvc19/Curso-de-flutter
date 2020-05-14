@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'description_place.dart';
 import 'review_list.dart';
-import 'gradient_back.dart';
+import 'header_appbar.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -39,7 +39,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,11 +47,11 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           ListView(
             children: <Widget>[
-              DescriptionPlace("Las vegas", 3 , descriptionPlaces),
+              DescriptionPlace("Las vegas", 4 , descriptionPlaces),
               ReviewList()
             ],
           ),
-          GradientBack("Popular")
+          HeaderAppBar()
         ],
       )
 
