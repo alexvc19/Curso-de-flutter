@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'review.dart';
+import 'buton_purple.dart';
 
 // ignore: must_be_immutable
 class DescriptionPlace extends StatelessWidget{
@@ -88,16 +89,17 @@ class DescriptionPlace extends StatelessWidget{
         textAlign: TextAlign.justify,
       ),
     );
-    final content = Container(
-      child: Column(
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           titleStart,
-          description
+          description,
+          ButtonPurple("Navigate")
 
         ],
-      ),
+
     );
-    return content;
   }
 
 }
