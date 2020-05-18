@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
-
-class ProfileTrips extends StatelessWidget{
+import 'gradient_back_profile.dart';
+import 'profile_images.dart';
+class ProfileTrips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container(
-      color: Colors.indigo,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        GradientBackProfile("Profile"),
+        ProfileImages("assets/img/disney.jpg")
+
+      ],
     );
   }
-
 }
