@@ -9,8 +9,8 @@ class HeaderProfileAppbar extends StatelessWidget{
     return Stack(
       children: <Widget>[
         GradientBackProfile("Profile"),
-        ProfileDeails(),
-        ProfileOptions()
+        ProfileDetails(),
+        ProfileOptions(),
       ],
     );
   }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class ProfileOptions extends StatelessWidget{
+String buttonTex= "Navigate";
 
-  String buttonTex= "Navigate";
+class ProfileOptions extends StatelessWidget{
     @override
   Widget build(BuildContext context){
 
@@ -17,10 +17,9 @@ class ProfileOptions extends StatelessWidget{
       child: Container(
         margin: EdgeInsets.only(
             top: 80,
-
         ),
-        height: 50.0,
-        width: 50.0,
+        height: 40.0,
+        width: 40.0,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30.0),
             color: Colors.white
@@ -43,10 +42,9 @@ class ProfileOptions extends StatelessWidget{
         margin: EdgeInsets.only(
           top: 80,
           left: 50.0,
-
         ),
-        height: 70.0,
-        width: 70.0,
+        height: 60.0,
+        width: 60.0,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(60.0),
             color: Colors.white
@@ -71,8 +69,8 @@ class ProfileOptions extends StatelessWidget{
           left: 50.0,
 
         ),
-        height: 50.0,
-        width: 50.0,
+        height: 40.0,
+        width: 40.0,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30.0),
             color: Colors.white

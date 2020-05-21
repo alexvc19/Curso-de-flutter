@@ -6,7 +6,6 @@ class FloatingActionButtonGreen extends StatefulWidget{
 
     return _FloatingActionButtonGreen();
   }
-
 }
 class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen>{
 

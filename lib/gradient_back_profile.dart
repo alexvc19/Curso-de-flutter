@@ -10,7 +10,7 @@ class GradientBackProfile extends StatelessWidget{
 
 
     return Container(
-          height: 360.0,
+          height: 380.0,
           decoration: BoxDecoration(
               gradient: LinearGradient(
                   colors: [
