@@ -8,7 +8,7 @@ class ProfileImages extends StatelessWidget{
 
     final imageview = Container(
       width: 370.0,
-      height: 220.0,
+      height: 20.0,
       margin: EdgeInsets.only(
           top:80.0,
           left: 20.0
