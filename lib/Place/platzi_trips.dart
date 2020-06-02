@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'home_trips.dart';
-import 'search_trips.dart';
-import 'profile_trips.dart';
-import 'platzi_trips_cupertino.dart';
+import '../User/home_trips.dart';
+import '../search_trips.dart';
+import '../User/profile_trips.dart';
+import '../platzi_trips_cupertino.dart';
 
 class PlatziTrips extends StatefulWidget{
 

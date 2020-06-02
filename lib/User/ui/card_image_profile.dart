@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
-
+import 'package:platzitripsapp/Place/place.dart';
+import 'profile_place_info.dart';
 
 class CardImageProfile extends StatelessWidget{
   String Image ="assets/img/lasvegas.jpg";
+  Place place;
+  CardImageProfile(this.Image, this.place);
 
-  CardImageProfile(this.Image);
 
   @override
   Widget build(BuildContext context) {
-    final card = Container(
-      width: 370.0,
-      height: 200.0,
-      margin: EdgeInsets.only(
+    double screenWidth = MediaQuery.of(context).size.width;
 
-          bottom: 80.0,
+    final card = Center (
+    child: Container(
+      width: screenWidth * 1.75,
+      height: 220.0,
+      margin: EdgeInsets.only(
+          bottom: 100.0,
       ),
       decoration: BoxDecoration(
           image: DecorationImage(
@@ -30,10 +34,12 @@ class CardImageProfile extends StatelessWidget{
             )
           ]
       ),
+      )
     );
     return Stack(
       children: <Widget>[
         card,
+        ProfilePlaceInfo(place)
       ],
     );
 

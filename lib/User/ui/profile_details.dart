@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'buton_bar.dart';
 
 String pathImage = "assets/img/personimg.jpg";
 String UserName = "Pathum Tzoo";
@@ -66,19 +67,19 @@ class ProfileDetails extends StatelessWidget{
 
     final userDetail = Container(
         margin: EdgeInsets.only(
-            top: 5.0,
+            top: 20.0,
            left: 10.0
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             userName,
-            userComment
+            userComment,
+
           ],)
     );
 
-
-    return Container(
+    final boxMain =  Container(
       margin: EdgeInsets.only(
         top: 100.0,
         left: 20.0,
@@ -86,9 +87,18 @@ class ProfileDetails extends StatelessWidget{
       child: Row(
         children: <Widget>[
           photo,
-          userDetail
+          userDetail,
         ],
       ),
+    );
+
+
+    return Column(
+      children: <Widget>[
+        boxMain,
+        ButtonsBar()
+      ],
+
     );
 
   }
